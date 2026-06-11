@@ -6,7 +6,6 @@
 <title>Ahmed Ali Yasin | Engineering Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <script src="https://unpkg.com/scrollreveal"></script>
 
 <style>
@@ -54,6 +53,16 @@ nav a:hover { color: #00d4ff; }
     padding: 20px;
 }
 
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00d4ff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0,212,255,0.4);
+}
+
 .hero h1 {
     font-size: 52px;
     color: #00d4ff;
@@ -86,13 +95,14 @@ section {
     margin-bottom: 20px;
 }
 
-/* CARDS */
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 18px;
 }
 
+/* CARD */
 .card {
     background: rgba(17, 26, 51, 0.9);
     padding: 20px;
@@ -104,6 +114,18 @@ section {
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 0 25px rgba(0,212,255,0.4);
+}
+
+/* CARD IMAGE */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.03);
 }
 
 /* BADGES */
@@ -141,6 +163,8 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
+    <img src="images/profile.jpg" class="profile-img" alt="Profile">
+
     <h1>Engineering. IoT. Cybersecurity.</h1>
     <p>
         Electrical & Electronics Engineering student specializing in Communication Systems,
@@ -168,17 +192,31 @@ footer {
         <span class="badge">Linux</span>
         <span class="badge">IoT Systems</span>
         <span class="badge">Cybersecurity</span>
-        <span class="badge">Renewable Energy Systems</span>
+        <span class="badge">Renewable Energy</span>
     </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
     <div class="title">Projects</div>
+
     <div class="grid">
-        <div class="card">GPS Tracking IoT System</div>
-        <div class="card">SAP-1 Processor Design</div>
-        <div class="card">Campus Network Architecture</div>
+
+        <div class="card">
+            <img src="images/gps.jpg" alt="GPS Project">
+            <h3>GPS Tracking IoT System</h3>
+        </div>
+
+        <div class="card">
+            <img src="images/sap1.jpg" alt="SAP-1">
+            <h3>SAP-1 Processor Design</h3>
+        </div>
+
+        <div class="card">
+            <img src="images/campus.jpg" alt="Network">
+            <h3>Campus Network Architecture</h3>
+        </div>
+
     </div>
 </section>
 
@@ -214,7 +252,6 @@ footer {
 </footer>
 
 <script>
-// SCROLL ANIMATION
 ScrollReveal().reveal('.card', {
     delay: 200,
     distance: '40px',
