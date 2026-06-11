@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed Ali Yasin | Engineering Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0b0f19;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    position: fixed;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+header h2 {
+    color: #00d4ff;
+}
+
+nav a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover { color: #00d4ff; }
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #00d4ff;
+    border-right: 3px solid #00d4ff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.hero p {
+    max-width: 800px;
+    opacity: 0.85;
+    margin-top: 20px;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 10%;
+}
+
+.title {
+    font-size: 28px;
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: rgba(17, 26, 51, 0.9);
+    padding: 20px;
+    border-radius: 14px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,212,255,0.1);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0,212,255,0.4);
+}
+
+/* BADGES */
+.badge {
+    display: inline-block;
+    background: #00d4ff;
+    color: black;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Ahmed Ali Yasin</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Engineering. IoT. Cybersecurity.</h1>
+    <p>
+        Electrical & Electronics Engineering student specializing in Communication Systems,
+        IoT, Wireless Networks, Cybersecurity, and Renewable Energy.
+    </p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="title">About Me</div>
+    <div class="card">
+        I am an Electrical & Electronics Engineering student at the Islamic University of Technology (IUT),
+        focused on Communication Systems, IoT, Cybersecurity, Wireless Networks, and Sustainable Energy systems.
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="title">Skills</div>
+    <div class="card">
+        <span class="badge">MATLAB</span>
+        <span class="badge">Python</span>
+        <span class="badge">Cisco Packet Tracer</span>
+        <span class="badge">Proteus</span>
+        <span class="badge">Linux</span>
+        <span class="badge">IoT Systems</span>
+        <span class="badge">Cybersecurity</span>
+        <span class="badge">Renewable Energy Systems</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="title">Projects</div>
+    <div class="grid">
+        <div class="card">GPS Tracking IoT System</div>
+        <div class="card">SAP-1 Processor Design</div>
+        <div class="card">Campus Network Architecture</div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <div class="title">Experience</div>
+
+    <div class="card">
+        Sub Assistant Engineer – M.Power Engineering (2021–2024)
+    </div>
+
+    <div class="card">
+        President & Treasurer – Somali Students Community (IUT)
+    </div>
+
+    <div class="card">
+        APSP 2025 International Engineering Program
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="title">Contact</div>
+    <div class="card">
+        Email: ahmedaliyasin4@gmail.com<br>
+        WhatsApp: +252 633 834 877<br>
+        LinkedIn: linkedin.com/in/ahmed-ali-yasin-b13869357
+    </div>
+</section>
+
+<footer>
+    © 2026 Ahmed Ali Yasin
+</footer>
+
+<script>
+// SCROLL ANIMATION
+ScrollReveal().reveal('.card', {
+    delay: 200,
+    distance: '40px',
+    origin: 'bottom',
+    interval: 100
+});
+
+ScrollReveal().reveal('.title', {
+    delay: 100,
+    origin: 'left',
+    distance: '30px'
+});
+</script>
+
+</body>
+</html>
